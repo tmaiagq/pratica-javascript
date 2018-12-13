@@ -45,5 +45,7 @@ $.ajax({
 	url: "https://swapi.co/api/people/1/"
 })
 .done(function(info){
-	preencherPerfil(info)
+	setTimeout(function(){
+		preencherPerfil(info)
+	}, 1000)
 })
